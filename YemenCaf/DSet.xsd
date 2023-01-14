@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DSet" targetNamespace="http://tempuri.org/DSet.xsd" xmlns:mstns="http://tempuri.org/DSet.xsd" xmlns="http://tempuri.org/DSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection ConnectionStringObject="Provider=Microsoft.ACE.OLEDB.12.0;Data Source=&quot;C:\Users\Mr.Moham'd\Desktop\dt0\YC22\YemenCaf\bin\x86\Debug\DataBase\db.accdb&quot;" IsAppSettingsProperty="false" Modifier="Assembly" Name="db.accdb" Provider="System.Data.OleDb" />
+        </Connections>
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DSet" msprop:Generator_UserDSName="DSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="tblSessions" msprop:Generator_TableClassName="tblSessionsDataTable" msprop:Generator_TableVarName="tabletblSessions" msprop:Generator_TablePropName="tblSessions" msprop:Generator_RowDeletingName="tblSessionsRowDeleting" msprop:Generator_RowChangingName="tblSessionsRowChanging" msprop:Generator_RowEvHandlerName="tblSessionsRowChangeEventHandler" msprop:Generator_RowDeletedName="tblSessionsRowDeleted" msprop:Generator_UserTableName="tblSessions" msprop:Generator_RowChangedName="tblSessionsRowChanged" msprop:Generator_RowEvArgName="tblSessionsRowChangeEvent" msprop:Generator_RowClassName="tblSessionsRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="session_no" msprop:Generator_ColumnVarNameInTable="columnsession_no" msprop:Generator_ColumnPropNameInRow="session_no" msprop:Generator_ColumnPropNameInTable="session_noColumn" msprop:Generator_UserColumnName="session_no" type="xs:int" />
+              <xs:element name="session_start" msprop:Generator_ColumnVarNameInTable="columnsession_start" msprop:Generator_ColumnPropNameInRow="session_start" msprop:Generator_ColumnPropNameInTable="session_startColumn" msprop:Generator_UserColumnName="session_start" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="session_end" msprop:Generator_ColumnVarNameInTable="columnsession_end" msprop:Generator_ColumnPropNameInRow="session_end" msprop:Generator_ColumnPropNameInTable="session_endColumn" msprop:Generator_UserColumnName="session_end" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="session_timeleft" msprop:Generator_ColumnVarNameInTable="columnsession_timeleft" msprop:Generator_ColumnPropNameInRow="session_timeleft" msprop:Generator_ColumnPropNameInTable="session_timeleftColumn" msprop:Generator_UserColumnName="session_timeleft" type="xs:decimal" minOccurs="0" />
+              <xs:element name="session_cost" msprop:Generator_ColumnVarNameInTable="columnsession_cost" msprop:Generator_ColumnPropNameInRow="session_cost" msprop:Generator_ColumnPropNameInTable="session_costColumn" msprop:Generator_UserColumnName="session_cost" type="xs:decimal" minOccurs="0" />
+              <xs:element name="user_no" msprop:Generator_ColumnVarNameInTable="columnuser_no" msprop:Generator_ColumnPropNameInRow="user_no" msprop:Generator_ColumnPropNameInTable="user_noColumn" msprop:Generator_UserColumnName="user_no" type="xs:unsignedByte" minOccurs="0" />
+              <xs:element name="station_no" msprop:Generator_ColumnVarNameInTable="columnstation_no" msprop:Generator_ColumnPropNameInRow="station_no" msprop:Generator_ColumnPropNameInTable="station_noColumn" msprop:Generator_UserColumnName="station_no" type="xs:unsignedByte" minOccurs="0" />
+              <xs:element name="session_state" msprop:Generator_ColumnVarNameInTable="columnsession_state" msprop:Generator_ColumnPropNameInRow="session_state" msprop:Generator_ColumnPropNameInTable="session_stateColumn" msprop:Generator_UserColumnName="session_state" type="xs:unsignedByte" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:tblSessions" />
+      <xs:field xpath="mstns:session_no" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>
